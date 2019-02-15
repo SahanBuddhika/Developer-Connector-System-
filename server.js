@@ -21,7 +21,6 @@ app.get('/',(req,res) => res.send('Hellow '));
 
 
 //use routes
-
 app.use('/api/users',users);
 app.use('/api/posts',posts);
 app.use('/api/profile',profile);
