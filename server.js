@@ -1,11 +1,22 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
+const bodyParser = require('body-parser');
+decodeURI('sahanodjjdejoj');
 const users = require('./routs/api/users');
 const posts = require('./routs/api/posts');
 const profile = require('./routs/api/profile');
 
 const app = express();
+
+mongoose.set('useNewUrlParser', true)
+//mongoose.set('useFindAndModify', true)
+//mongoose.set('useCreateIndex', true)
+
+
+
+//Body parser middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 //DB Config
 const db = require('./config/keys').mongoURI;
