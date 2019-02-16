@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-decodeURI('sahanodjjdejoj');
 const users = require('./routs/api/users');
 const posts = require('./routs/api/posts');
 const profile = require('./routs/api/profile');
